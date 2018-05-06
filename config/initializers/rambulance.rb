@@ -27,10 +27,10 @@ Rambulance.setup do |config|
   # If Rambulance receives an exception that is not listed here, it'll render
   # the internal server error template and return 500 as http status.
   config.rescue_responses = {
-    # "ActiveRecord::RecordNotUnique" => :unprocessable_entity,
-    # "CanCan::AccessDenied"          => :forbidden,
-    # "Pundit::NotAuthorizedError"    => :forbidden,
-    # "YourCustomException"           => :not_found
+    #"ActiveRecord::RecordNotUnique" => :unprocessable_entity,
+    #"CanCan::AccessDenied"          => :forbidden,
+    #"Pundit::NotAuthorizedError"    => :forbidden,
+    "MajorError::BadRequest"           => :not_found
   }
 
   # The template name for the layout of the error pages. The default value is

@@ -11,6 +11,12 @@ gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'ridgepole'
 gem 'config'
+gem 'fast_jsonapi'
+gem 'dry-types'
+gem 'dry-struct'
+gem 'dry-validation'
+gem 'pry-byebug'
+gem 'rambulance'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
